@@ -1,0 +1,42 @@
+:root {
+    --branco: #FFFFFF;
+    --verde-claro: #8FF7D0;
+    --verde-medio: #1CF7A5;
+    --verde-escuro: #38A079;
+    --cinza: #5F5F5F;
+
+    --preto-fonte: #2B2B2B;
+
+    --fonte-tamanho-titulo: 24px;
+
+    --fonte-familia-padrao: 'Montserrat', sans-serif;
+}
+
+html, body {
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: var(--fonte-familia-padrao);
+}
+
+.container {
+    padding: 22px 5%;
+}
+
+.botao {
+    width: 180px;
+    height: 45px;
+    background-color: var(--verde-medio);
+    border: none;
+    border-radius: 2px;
+}
+
+button .botao:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768){
+    .container {
+        padding: 32px 132px;
+    }
+}
+

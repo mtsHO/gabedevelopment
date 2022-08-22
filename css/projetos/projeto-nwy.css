@@ -1,0 +1,186 @@
+body {
+    transition: background .4s ease-in;
+    background-image: url('../../img/projetos/not-without-you/bg-nwy.png');
+    background-repeat: no-repeat;
+    background-color: #004935;
+    background-size: contain;
+    overflow: hidden;
+    background-position-y: -20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.4s;
+    display: flex;
+}
+
+.slides{
+    width: 5120px;
+    display: flex;
+}
+
+.slides div.image {
+    margin-right: 20px;
+    width: 100vw;
+    height: 300px;
+    background-size: contain;
+    transition: all 2s;
+}
+
+.slides div.image:hover {
+    transition: 1s ease-in-out;
+}
+
+.btn{
+    position: absolute;
+    color: var(--verde-medio);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btn:hover{
+    transform: scale(1.3);
+}
+
+#voltar{
+    top: 120px;
+    left: -1%;
+}
+
+#next{
+    top: 120px;
+    right: -1%;
+}
+
+.balls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 48vh;
+    transform: scale(0.8);
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 2px solid var(--verde-medio);
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background: var(--verde-medio);
+    transform: scale(1.3);
+}
+
+.imgAtual{
+    background: var(--verde-medio);
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.btn-slide-projetos{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 185px;
+    height: 35px;
+    font-size: 16px;
+}
+
+
+.slides div.image1 {
+    background: url("../../img/projetos/not-without-you/1.png");
+    background-size: cover;
+}
+
+.slides div.image2 {
+    background: url("../../img/projetos/not-without-you/2.png");
+    background-size: cover;
+}
+
+.slides div.image3 {
+    background: url("../../img/projetos/not-without-you/3.png");
+    background-size: cover;
+}
+
+.slides div.image4 {
+    background: url("../../img/projetos/not-without-you/4.png");
+    background-size: cover;
+}
+
+.slides div.image5 {
+    background: url("../../img/projetos/not-without-you/5.png");
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 768px){
+    body {
+        background-size: 100vw 3000px;
+        background-position-y: 0;
+    }
+
+    .slide{
+        padding-left: 32%;
+        width: 100vw;
+        height: 600px;
+        overflow: hidden;
+        transition: all 0.4s;
+        display: flex;
+    }
+
+    .slides div.image {
+        margin-top: 30px;
+        margin-right: 70px;
+        width: 550px;
+        height: 375px;
+        background-size: cover;
+        transition: all 2s;
+        border-radius: 0;
+    }
+
+    #voltar{
+        top: 435px;
+        left: 30%;
+    }
+    
+    #next{
+        top: 435px;
+        right: 39.5%;
+    }
+
+    .balls{
+        left: 38.5%;
+        margin-top: 450px;
+        justify-content: flex-start;
+        margin-left: 0;
+        transform: scale(1);
+    }
+
+    .balls div{
+        transition: all 0.5s;
+        border: 2px solid var(--verde-medio);
+        padding: 6px;
+        border-radius: 50%;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+}

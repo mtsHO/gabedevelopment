@@ -1,0 +1,124 @@
+body {
+    transition: .4s ease-in;
+    background-image: url('../img/projetos/bg-projetos.png');
+    background-repeat: no-repeat;
+    background-color: #004935;
+    background-size: contain;
+    background-position: 0px -20px;
+}
+
+.todos-projetos {
+    margin-top: 160px;   
+    display: block;
+}
+
+#projeto-1 {
+    background-image: url('../img/caroussel/caroussel-hvm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: -75px;
+}
+
+#projeto-1:hover {
+    background-image: url('../img/caroussel/caroussel-hvm-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: 1s;
+} 
+
+#projeto-2 {
+    background-image: url('../img/caroussel/caroussel-vm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: -75px;
+}
+
+#projeto-2:hover {
+    background-image: url('../img/caroussel/caroussel-vm-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: 1s;
+} 
+
+#projeto-3 {
+    background-image: url('../img/caroussel/caroussel-nwy.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: -75px;
+}
+
+#projeto-3:hover {
+    background-image: url('../img/caroussel/caroussel-nwy-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: 1s;
+} 
+
+#projeto-4 {
+    background-image: url('../img/caroussel/caroussel-vm0.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: -75px;
+}
+
+#projeto-4:hover {
+    background-image: url('../img/caroussel/caroussel-vm0-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.todos-projetos a{
+    width: 300px;
+    height: 300px;
+}
+
+.todos-projetos{
+    margin-bottom: 150px;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        background-size: cover;
+        background-position: 0px -100px;
+    }
+
+    .todos-projetos {
+        margin-top: 55vw;   
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #projeto-1 {
+        margin-bottom: 0;
+        margin-bottom: 90px;
+    }
+    #projeto-2 {
+        margin-bottom: 0;
+    }
+    #projeto-3 {
+        margin-bottom: 0;
+    }
+    #projeto-4 {
+        margin-bottom: 0;
+    }
+
+
+
+}

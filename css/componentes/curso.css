@@ -1,0 +1,109 @@
+.curso {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.cartao-curso{
+    border: solid 5px var(--verde-medio);
+    border-radius: 30px;
+    position: absolute;
+    text-align: center;
+    top: 305vh;
+    width: 70%;
+    margin-left: 12.5%;
+    padding: 10px;
+}
+
+.cartao-curso__titulo {
+    color: var(--verde-medio);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+}
+
+.cartao-curso__texto {
+    color: var(--verde-medio);
+    font-size: 14x;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+.botao-curso {
+    color: var(--preto-fonte);
+    background: transparent linear-gradient(3deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    left: 18.5%;
+    margin-top: 25px;
+}
+
+.botao-curso:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.video-curso video {
+    object-fit: cover;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    height: 300px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .curso {
+        height: 320px;
+        flex-direction: row;
+        background-color: var(--verde-medio);
+    }
+
+    .cartao-curso {
+        width: 30%;
+        position: unset;
+        align-items: center;
+        text-align: left;
+        top: none;
+    }
+
+    .cartao-curso__titulo {
+        font-size: 33px;
+        margin-bottom: 20px;
+        padding-top: 42px;
+        color: var(--preto-fonte);
+    }
+
+    .cartao-curso__texto {
+        margin-bottom: 20px;
+        color: var(--preto-fonte);
+    }
+
+    .botao-curso {
+        background: var(--preto-fonte);
+        color: var(--verde-medio);
+        text-transform: uppercase;
+        width: 200px;
+        height: 40px;
+        font-weight: 400;
+        position:unset;
+        margin-top: 16px;
+    }
+
+    .video-curso video {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+
+}

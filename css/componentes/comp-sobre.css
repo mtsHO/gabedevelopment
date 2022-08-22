@@ -1,0 +1,100 @@
+#sobre{
+    padding-top: 50px;
+}
+
+.cartao {
+    padding: 25px;
+}
+
+.cartao-titulo {
+    color: var(--verde-medio);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.cartao-texto {
+    text-align: center;
+    color: var(--branco);
+    margin-bottom: 32px;
+    line-height: 22px;
+}
+
+.cartao-icone {
+    display: none;
+}
+
+#icone_game_controller path {
+    stroke-width: 5px;
+    stroke: var(--verde-medio);
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    fill: transparent;
+    animation: lett-tracado 10s ease-in-out 2s infinite;
+}
+
+@keyframes lett-tracado {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.botao-cartao {
+    color: var(--preto-fonte);
+    background: transparent linear-gradient(3deg, var(--verde-medio) 0%, var(--verde-claro) 100%);
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+
+.botao-cartao:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+@media screen and (min-width: 768px) {
+    #sobre{
+        padding-top: 250px;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        padding-right: 132px;
+        padding-left: 165px;
+        padding-bottom: 155px;
+        margin-top: 80px;
+    }
+
+    .cartao-titulo {
+        font-size: 48px;
+        text-align: start;
+    }
+
+    .cartao-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cartao-conteudo{
+        width: 60%;
+    }
+
+    .cartao-texto {
+        text-align: start;
+    }
+
+    .cartao-icone {
+        display: flex;
+        margin-left: 40%;
+        width: 311px;
+        height: 233px;
+    }
+    .botao-cartao {
+        margin-left: 0;
+    }
+
+}

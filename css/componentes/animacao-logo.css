@@ -1,0 +1,81 @@
+  
+.animacao{
+  left: 45%;
+  overflow: visible;
+  text-align: center;
+}
+
+.animacao-logo{
+  display: block;
+  margin-top: -10%;
+  width: 150px;
+  height: 150px;
+  margin-left: 50%;
+  margin-right: auto;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--verde-medio);
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.logo-txt{
+  display: none;
+}
+
+.logo-txt-mobile{
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-txt-mobile-1{
+  margin-top: 10%;
+  width: 680px;
+}
+
+.logo-txt-mobile-2{
+  margin-top: -20%;
+  margin-bottom: -10%;
+}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .animacao-logo{
+    display: none;
+  }
+
+  .logo-txt-mobile{
+    display: none;
+  }
+
+  .logo-txt{
+    display: flex;
+  }
+
+}

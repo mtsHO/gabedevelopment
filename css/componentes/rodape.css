@@ -1,0 +1,8 @@
+.rodape-creditos {
+    height: 40px;
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+    background-color: var(--verde-medio);
+    box-sizing: border-box;
+}
